@@ -19,7 +19,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.change.me
+    - host: dashboard.jx.ihsws.cloud
       http:
         paths:
           - pathType: ImplementationSpecific
@@ -28,3 +28,7 @@ spec:
                 name: jx-pipelines-visualizer
                 port:
                   name: http
+  tls:
+    - secretName: tls-ihsws-cloud-s
+      hosts:
+        - dashboard.jx.ihsws.cloud

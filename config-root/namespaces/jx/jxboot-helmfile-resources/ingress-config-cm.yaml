@@ -1,11 +1,11 @@
 # Source: jxboot-helmfile-resources/templates/ingress-config-configmap.yaml
 apiVersion: v1
 data:
-  domain: "change.me"
+  domain: "ihsws.cloud"
   email: ""
   exposer: "Ingress"
   issuer: ""
-  tls: "false"
+  tls: "true"
 kind: ConfigMap
 metadata:
   name: ingress-config

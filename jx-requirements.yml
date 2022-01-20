@@ -22,11 +22,11 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "ihsws.cloud"
-    externalDNS: false
+    domain: ihsws.cloud
+    kind: ingress
     namespaceSubDomain: .jx.
     tls:
-      email: "luca.iacono@gmail.com"
+      email: luca.iacono@gmail.com
       enabled: true
       production: false
   pipelineUser:
